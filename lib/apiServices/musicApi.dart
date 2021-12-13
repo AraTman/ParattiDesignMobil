@@ -8,7 +8,7 @@ Future<MusicApi> fetchMusic(String barcode) async {
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
   var jsonResponse;
   final http.Response response = await http.get(
-    'https://app.portalofarge.com/api/QrCode?qrCode=$barcode',
+    'https://local/api/QrCode?qrCode=$barcode',
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
     },

@@ -266,7 +266,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
       var result = await BarcodeScanner.scan(options: options);
       String barcode = result.rawContent.toString();
       Future<void> initStatee() async {
-        final url = "https://app.portalofarge.com/api/QrCode?qrCode=$barcode";
+        final url = "https://local/api/QrCode?qrCode=$barcode";
         var res = await http
             .get(Uri.encodeFull(url), headers: {"Accept": "application/json"});
         try {

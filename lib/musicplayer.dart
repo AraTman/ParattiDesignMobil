@@ -37,7 +37,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
       start: Duration(seconds: 0),
       end: Duration(seconds: 225),
       child:
-          AudioSource.uri(Uri.parse("https://app.portalofarge.com/mp3/1.mp3")),
+          AudioSource.uri(Uri.parse("https://local/mp3/1.mp3")),
       tag: AudioMetadata(
         album: "mp3Ada",
         title: "A Salute To Head-Scratching Science (5 seconds)",
