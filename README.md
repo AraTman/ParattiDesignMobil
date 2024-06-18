@@ -1,4 +1,4 @@
-# qparattidesig
+# qparattidesigns
 
 A new Flutter project
 
